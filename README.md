@@ -1,8 +1,8 @@
 # RustyCache Rust Library
 ![Rust](https://img.shields.io/badge/Rust-lang-000000.svg?style=flat&logo=rust)
 [![Rust](https://github.com/Q300Z/easycache/actions/workflows/ci.yml/badge.svg)](https://github.com/Q300Z/easycache/actions/workflows/ci.yml)
-[![Crates.io](https://img.shields.io/crates/v/easycache.svg)](https://crates.io/crates/easycache)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Crates.io](https://img.shields.io/crates/v/rustycache.svg)](https://crates.io/crates/rustycache)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A generic, thread-safe, asynchronous cache library in Rust implementing multiple cache eviction strategies with TTL and background cleaning.
 
