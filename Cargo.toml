@@ -1,14 +1,13 @@
 [package]
-name = "easycache"
+name = "rustycache"
 version = "1.0.0"
 rust-version = "1.86"
 authors = ["Q300Z"]
 description = "A simple and easy-to-use caching library for Rust."
-license = "MIT"
 license-file = "LICENSE"
 readme = "README.md"
-repository = "https://github.com/Q300Z/easycache"
-homepage = "https://github.com/Q300Z/easycache"
+repository = "https://github.com/Q300Z/rustycache"
+homepage = "https://github.com/Q300Z/rustycache"
 keywords = ["cache", "ttl","LRU", "LFU", "FIFO"]
 categories = ["caching"]
 

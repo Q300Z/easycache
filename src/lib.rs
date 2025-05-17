@@ -1,3 +1,3 @@
 
-pub mod easycache;
+pub mod rustycache;
 pub mod strategy;

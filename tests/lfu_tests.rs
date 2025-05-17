@@ -2,10 +2,10 @@
 mod lfu_tests {
     use std::time::Duration;
     use tokio::time::sleep;
-    use easycache::easycache::Easycache;
+    use rustycache::rustycache::Rustycache;
 
-    fn create_cache(capacity: usize, ttl_secs: u64, interval_secs: u64) -> Easycache<String, String> {
-        Easycache::new(capacity, Duration::from_secs(ttl_secs), Duration::from_secs(interval_secs), easycache::strategy::StrategyType::LFU)
+    fn create_cache(capacity: usize, ttl_secs: u64, interval_secs: u64) -> Rustycache<String, String> {
+        Rustycache::new(capacity, Duration::from_secs(ttl_secs), Duration::from_secs(interval_secs), rustycache::strategy::StrategyType::LFU)
     }
 
     #[tokio::test]

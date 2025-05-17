@@ -1,4 +1,4 @@
-# EasyCache Rust Library
+# RustyCache Rust Library
 ![Rust](https://img.shields.io/badge/Rust-lang-000000.svg?style=flat&logo=rust)
 [![Rust](https://github.com/Q300Z/easycache/actions/workflows/ci.yml/badge.svg)](https://github.com/Q300Z/easycache/actions/workflows/ci.yml)
 [![Crates.io](https://img.shields.io/crates/v/easycache.svg)](https://crates.io/crates/easycache)
@@ -24,11 +24,11 @@ A generic, thread-safe, asynchronous cache library in Rust implementing multiple
 Add this crate to your `Cargo.toml`:
 
 ```toml
-easycache = { path = "path/to/easycache" }
+rustycache = { path = "path/to/rustycache" }
 ```
 Or if published on crates.io, replace with version:
 ```toml
-easycache = "0.1"
+rustycache = "1.0"
 ```
 ### Example: Using LFU Cache
 ```rust

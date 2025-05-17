@@ -4,11 +4,11 @@ use crate::strategy::fifo::FIFOCache;
 use crate::strategy::lfu::LFUCache;
 use crate::strategy::lru::LRUCache;
 
-pub struct Easycache<K, V> {
+pub struct Rustycache<K, V> {
     inner: Box<dyn CacheStrategy<K, V>>,
 }
 
-impl<K, V> Easycache<K, V>
+impl<K, V> Rustycache<K, V>
 where
     K: 'static + Send + Sync + Clone + Eq + std::hash::Hash,
     V: 'static + Send + Sync + Clone,
@@ -22,7 +22,7 @@ where
 
         inner.start_cleaner(clean_interval);
 
-        Easycache { inner }
+        Rustycache { inner }
     }
 
     pub fn put(&mut self, key: K, value: V) {

@@ -2,10 +2,10 @@
 mod fifo_tests {
     use std::time::Duration;
     use tokio::time::sleep;
-    use easycache::easycache::Easycache;
+    use rustycache::rustycache::Rustycache;
 
-    fn create_cache(capacity: usize, ttl_secs: u64, clean_interval_secs: u64) -> Easycache<String, String> {
-        Easycache::new(capacity, Duration::from_secs(ttl_secs), Duration::from_secs(clean_interval_secs), easycache::strategy::StrategyType::FIFO)
+    fn create_cache(capacity: usize, ttl_secs: u64, clean_interval_secs: u64) -> Rustycache<String, String> {
+        Rustycache::new(capacity, Duration::from_secs(ttl_secs), Duration::from_secs(clean_interval_secs), rustycache::strategy::StrategyType::FIFO)
     }
 
     #[tokio::test]
