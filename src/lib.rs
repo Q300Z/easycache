@@ -1,1 +1,3 @@
-pub mod lru_cache;
+
+pub mod easycache;
+pub mod strategy;
